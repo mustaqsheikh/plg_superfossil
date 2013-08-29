@@ -1,4 +1,4 @@
-Super Fossil Joomla PLugin
+Super Fossil Joomla Plugin
 ==========================
 
 This plugin makes it simple for you to implement [Respond.js](https://github.com/scottjehl/Respond) and [Selectivizr](https://github.com/keithclark/selectivizr) on your Joomla powered Websites.
@@ -12,7 +12,7 @@ Installing the PLugin
 Follow these simple steps:
 
 * Download the package to your Desktop
-* Insatll using the Joomla Extension Installer
+* Install using the Joomla Extension Installer
 * Enable the plugin via the Joomal PLugin Manager
 * Visit your site with a Fossilised IE 8 or below to see it in action.
 
