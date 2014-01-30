@@ -30,21 +30,18 @@ class plgSystemSuperfossil extends JPlugin
 			return;
 		}
 
-  	    $doc = & JFactory :: getDocument();
+  	    $doc = JFactory::getDocument();
 
-        if (version_compare(JVERSION,'3','ge')) {
-
-  		JHtml::_('jquery.framework');
-
- 		} else {
-
-        if(JFactory::getApplication()->get('jquery') !== true) {
-        $doc->addScript(JURI::root() . '/plugins/system/superfossil/assets/js/jquery.js');
-    	$doc->addScript( JURI::root(true) .'/plugins/system/superfossil/assets/js/noconflict.js');
-            JFactory::getApplication()->set('jquery', true);
-        }
-
-      }
+	    if (version_compare(JVERSION,'3','ge')) {
+	  		JHtml::_('jquery.framework');
+	 	} else {
+	
+	        if(JFactory::getApplication()->get('jquery') !== true) {
+				$doc->addScript(JURI::root() . '/plugins/system/superfossil/assets/js/jquery.js');
+	    		$doc->addScript( JURI::root(true) .'/plugins/system/superfossil/assets/js/noconflict.js');
+	        	JFactory::getApplication()->set('jquery', true);
+	        }
+	    }
 	}
 
 	function onAfterRender()
